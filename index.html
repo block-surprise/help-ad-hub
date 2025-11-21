@@ -5,121 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ad-hub ヘルプ</title>
 <style>
-  :root {
-    --bg:#fafafa; --card:#ffffff; --text:#222; --muted:#666; --border:#e5e5e5; --accent:#2458b8;
-  }
-  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg); color:var(--text); }
-  header { display:flex; align-items:center; justify-content:space-between; padding:20px; border-bottom:1px solid var(--border); background:var(--card); position:sticky; top:0; z-index:10; }
-  h1 { font-size:18px; margin:0; letter-spacing:.2px; }
-  #search { width:320px; max-width:50vw; padding:10px 12px; border:1px solid var(--border); border-radius:8px; font-size:14px; }
-  main { max-width:960px; margin:0 auto; padding:28px 20px 80px; }
-  section { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; margin-bottom:16px; }
-  section > h2 { font-size:16px; margin:0 0 14px; }
-  p { line-height:1.7; color:var(--muted); margin:0 0 10px; }
-  ul, ol { margin:0; padding-left:18px; }
-  li { margin:8px 0; }
-  strong.lead { font-weight:600; color:var(--text); }
-  details { border:1px solid var(--border); border-radius:10px; padding:12px 14px; background:#fcfcfc; margin:10px 0; }
-  summary { cursor:pointer; font-weight:600; }
-  .kbd { display:inline-block; border:1px solid var(--border); border-radius:6px; padding:2px 6px; background:#f4f4f4; font-size:12px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; }
-  .muted { color:var(--muted); }
-  footer { text-align:center; color:var(--muted); padding:22px; }
-  .anchor { color:var(--accent); text-decoration:none; }
-  .hidden { display:none; }
+  body { margin:0; font-family:system-ui; background:#fafafa; color:#222; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:20px; background:#fff; border-bottom:1px solid #ddd; }
+  h1 { font-size:20px; margin:0; }
+  #search { padding:8px 12px; border:1px solid #ccc; border-radius:8px; width:250px; }
+  main { max-width:960px; margin:0 auto; padding:30px 20px; }
+  section { background:#fff; border:1px solid #eee; border-radius:12px; padding:20px; margin-bottom:20px; }
+  h2 { font-size:18px; margin:0 0 12px; }
+  p { line-height:1.6; margin:0 0 10px; }
+  .links a { display:inline-block; margin-right:12px; color:#2458b8; text-decoration:none; }
+  footer { text-align:center; padding:20px; color:#666; font-size:14px; }
 </style>
 </head>
 <body>
+
 <header>
   <h1>ad-hub ヘルプ</h1>
-  <input id="search" type="search" placeholder="ヘルプ内検索…" aria-label="ヘルプ内検索" />
+  <input id="search" type="search" placeholder="ヘルプ内検索…" />
 </header>
 
 <main>
   <section id="overview">
     <h2>概要</h2>
-    <p>ad-hub は、広告・クリエイティブ・アセットを横断して整理・検索・共有するためのハブです。ここでは、基本操作とトラブル解決を最短で案内します。</p>
-    <div class="grid">
-      <div>
-        <p><strong class="lead">ホーム:</strong> 最近のアセット、ピン留め、クイックアクションにアクセス。</p>
-        <p><strong class="lead">検索:</strong> タイトル／タグ／メタ情報で横断検索。</p>
-      </div>
-      <div>
-        <p><strong class="lead">共有:</strong> 安全なリンク／テキストコピーで素早く共有。</p>
-        <p><strong class="lead">並べ替え:</strong> 更新日／タイトル／ピン優先を切替。</p>
-      </div>
+    <p>ad-hub は広告・クリエイティブ・アセットを整理・検索・共有するためのハブです。</p>
+    <p>ここでは基本操作とトラブル解決を最短で案内します。</p>
+  </section>
+
+  <section id="quick-links">
+    <h2>主要導線</h2>
+    <div class="links">
+      <a href="#quickstart">クイックスタート</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#troubleshoot">トラブル解決</a>
     </div>
-    <p class="muted">初めての方は「クイックスタート」へ。</p>
-  </section>
-
-  <section id="quickstart">
-    <h2>クイックスタート</h2>
-    <ol>
-      <li><strong class="lead">ログイン:</strong> 権限が必要です。招待メールのリンクからログインしてください。</li>
-      <li><strong class="lead">アセット登録:</strong> 「追加」からタイトルと説明を入力し、必要なら添付・URLを保存。</li>
-      <li><strong class="lead">整理:</strong> フォルダーへドラッグ＆ドロップ、必要なものはピン留め。</li>
-      <li><strong class="lead">検索:</strong> ヘッダーの検索欄で即時フィルター。</li>
-      <li><strong class="lead">共有:</strong> 詳細画面の「共有」からリンクをコピー。</li>
-    </ol>
-    <p class="muted">ヘルプ内ショートリンク: <a class="anchor" href="#faq">よくある質問</a> / <a class="anchor" href="#troubleshoot">トラブル解決</a> / <a class="anchor" href="#shortcuts">ショートカット</a></p>
-  </section>
-
-  <section id="faq">
-    <h2>よくある質問</h2>
-    <details>
-      <summary>検索結果が少ない／出ない</summary>
-      <p><strong class="lead">確認:</strong> スペル・大文字小文字・全角半角を見直してください。部分一致が有効です。</p>
-      <p><strong class="lead">範囲:</strong> 「タイトルのみ」「説明のみ」など対象を絞ると精度が上がります。</p>
-    </details>
-    <details>
-      <summary>共有リンクの権限は？</summary>
-      <p><strong class="lead">既定:</strong> チーム内限定。外部共有は明示的にオンにしたリンクのみ有効です。</p>
-      <p class="muted">機密データは外部共有を避けてください。</p>
-    </details>
-    <details>
-      <summary>並べ替え基準は保存される？</summary>
-      <p><strong class="lead">はい:</strong> 選択した基準はブラウザに保存され、次回も同じ並びで表示されます。</p>
-    </details>
-  </section>
-
-  <section id="troubleshoot">
-    <h2>トラブル解決</h2>
-    <details>
-      <summary>ページが読み込まれない／遅い</summary>
-      <p><strong class="lead">ネットワーク:</strong> 接続を確認し、VPNを切り替えてください。</p>
-      <p><strong class="lead">キャッシュ:</strong> ブラウザのキャッシュクリア後に再読み込み。</p>
-    </details>
-    <details>
-      <summary>添付がアップロードできない</summary>
-      <p><strong class="lead">制限:</strong> ファイルサイズと拡張子の制限を確認してください。</p>
-      <p><strong class="lead">再試行:</strong> 10秒後に再試行、それでも不可なら別ブラウザで確認。</p>
-    </details>
-    <details>
-      <summary>権限エラーが出る</summary>
-      <p><strong class="lead">手順:</strong> 管理者にアクセス権の付与を依頼し、再ログインしてください。</p>
-    </details>
-  </section>
-
-  <section id="shortcuts">
-    <h2>キーボードショートカット</h2>
-    <ul>
-      <li><strong class="lead">検索を開く:</strong> <span class="kbd">/</span></li>
-      <li><strong class="lead">新規追加:</strong> <span class="kbd">N</span></li>
-      <li><strong class="lead">並べ替え切替:</strong> <span class="kbd">S</span></li>
-      <li><strong class="lead">ピン留め:</strong> <span class="kbd">P</span></li>
-    </ul>
-    <p class="muted">画面右下の「?」でショートカット一覧を開けます。</p>
-  </section>
-
-  <section id="privacy">
-    <h2>データとプライバシー</h2>
-    <p><strong class="lead">保存:</strong> 並び順や表示設定はブラウザに保存されます。共有リンクの権限は管理者設定に従います。</p>
-    <p><strong class="lead">取り扱い:</strong> 機密性の高いアセットはチーム内共有のみで扱ってください。</p>
-  </section>
-
-  <section id="contact">
-    <h2>お問い合わせ</h2>
-    <p><strong class="lead">連絡方法:</strong> 管理者または運営窓口へ。スクリーンショット・再現手順・発生時刻を添えてください。</p>
   </section>
 </main>
 
@@ -128,33 +46,9 @@
 </footer>
 
 <script>
-  // ヘルプ内検索（全文シンプルフィルター）
-  const search = document.getElementById('search');
-  const sections = [...document.querySelectorAll('main section')];
-  search.addEventListener('input', () => {
-    const q = search.value.trim().toLowerCase();
-    if (!q) { sections.forEach(s => s.classList.remove('hidden')); return; }
-    sections.forEach(s => {
-      const text = s.innerText.toLowerCase();
-      s.classList.toggle('hidden', !text.includes(q));
-    });
-  });
-
-  // 最終更新日表示
   document.getElementById('lastUpdated').textContent =
-    new Date(document.lastModified).toLocaleString();
-
-  // アクセシビリティ: detailsを開くと余計なスクロールを抑制
-  document.querySelectorAll('details').forEach(d => {
-    d.addEventListener('toggle', () => {
-      if (d.open) d.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
-
-  // ショートカット
-  window.addEventListener('keydown', (e) => {
-    if (e.key === '/') { e.preventDefault(); search.focus(); }
-  });
+    new Date(document.lastModified).toLocaleDateString();
 </script>
+
 </body>
 </html>
