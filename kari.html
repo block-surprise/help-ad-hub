@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>広告作成 - ad-hub</title>
+<style>
+  body { font-family:system-ui; background:#fafafa; margin:0; }
+  main { max-width:800px; margin:0 auto; padding:30px 20px; }
+  label { display:block; margin-top:15px; font-weight:bold; }
+  input, textarea, select { width:100%; padding:10px; margin-top:6px; border:1px solid #ccc; border-radius:6px; }
+  .actions { margin-top:20px; }
+  button { padding:10px 16px; border:none; border-radius:6px; cursor:pointer; }
+  .save { background:#2458b8; color:#fff; }
+  .preview { background:#eee; }
+</style>
+</head>
+<body>
+<main>
+  <h1>広告作成</h1>
+
+  <form>
+    <label for="title">タイトル</label>
+    <input id="title" type="text" placeholder="例: 冬のキャンペーン2025" required>
+
+    <label for="desc">説明</label>
+    <textarea id="desc" rows="4" placeholder="広告の目的や概要を入力"></textarea>
+
+    <label for="files">添付ファイル</label>
+    <input id="files" type="file" multiple>
+
+    <label for="link">リンクURL</label>
+    <input id="link" type="url" placeholder="https://example.com" required>
+
+    <label for="tags">タグ</label>
+    <input id="tags" type="text" placeholder="例: キャンペーン, SNS, バナー">
+
+    <label for="folder">フォルダー</label>
+    <select id="folder">
+      <option>未分類</option>
+      <option>キャンペーン</option>
+      <option>SNS広告</option>
+      <option>バナー</option>
+    </select>
+
+    <label for="scope">公開範囲</label>
+    <select id="scope">
+      <option>チーム内限定</option>
+      <option>外部共有可</option>
+    </select>
+
+    <div class="actions">
+      <button type="submit" class="save">保存</button>
+      <button type="button" class="preview">プレビュー</button>
+    </div>
+  </form>
+</main>
+</body>
+</html>
