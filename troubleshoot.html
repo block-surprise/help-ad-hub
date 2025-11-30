@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ad-hub トラブル解決ガイド</title>
+  <meta name="description" content="ad-hubの各機能に関するトラブルとその解決方法をまとめたヘルプページです。SURGE、メモ、設定、検索、表示などの問題に対応。">
+  <meta name="robots" content="index, follow">
+  <style>
+    body { font-family: system-ui; background: #f9f9f9; margin: 0; color: #333; }
+    header { padding: 20px; background: #fff; border-bottom: 1px solid #ddd; }
+    h1 { font-size: 22px; margin: 0; }
+    main { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
+    h2 { font-size: 18px; margin-top: 30px; }
+    details { margin: 12px 0; padding: 12px; background: #fff; border: 1px solid #eee; border-radius: 8px; }
+    summary { cursor: pointer; font-weight: bold; }
+    p { line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ad-hub トラブル解決ガイド</h1>
+  </header>
+  <main>
+    <p>このページでは、ad-hubの各機能に関するよくあるトラブルと、その解決方法をまとめています。</p>
+
+    <h2>SURGE（検索機能）</h2>
+    <details>
+      <summary>検索結果が表示されない</summary>
+      <p>ネットワーク接続を確認してください。JavaScriptが無効になっていると検索が機能しません。</p>
+    </details>
+    <details>
+      <summary>検索候補がすぐに消える</summary>
+      <p>検索欄のフォーカスが外れると候補が非表示になる仕様です。意図的な設計ですのでご安心ください。</p>
+    </details>
+
+    <h2>SURGE Light（マルチ検索ランチャー）</h2>
+    <details>
+      <summary>検索先が開かない</summary>
+      <p>ポップアップブロックが有効になっている可能性があります。ブラウザの設定をご確認ください。</p>
+    </details>
+    <details>
+      <summary>検索先を変更したい</summary>
+      <p>設定画面から使用する検索エンジンをON/OFFで切り替えられます。</p>
+    </details>
+
+    <h2>メモ機能</h2>
+    <details>
+      <summary>メモが消えた／見つからない</summary>
+      <p>検索欄でタイトルや本文を確認してください。削除済みの場合は復元できません。</p>
+    </details>
+    <details>
+      <summary>ピン留めが反映されない</summary>
+      <p>ブラウザを再読み込みしてください。保存されない場合はキャッシュをクリアしてください。</p>
+    </details>
+
+    <h2>表示・UI</h2>
+    <details>
+      <summary>テーマが崩れて見える</summary>
+      <p>CSSが正しく読み込まれていない可能性があります。キャッシュをクリアして再読み込みしてください。</p>
+    </details>
+    <details>
+      <summary>アニメーションが動かない</summary>
+      <p>ブラウザの設定でアニメーションが無効になっている場合があります。設定をご確認ください。</p>
+    </details>
+
+    <h2>設定・保存</h2>
+    <details>
+      <summary>設定が保存されない</summary>
+      <p>ローカルストレージが無効になっている可能性があります。プライベートモードでは保存されないことがあります。</p>
+    </details>
+    <details>
+      <summary>設定が初期化されてしまう</summary>
+      <p>ブラウザのキャッシュやストレージがクリアされた可能性があります。定期的なバックアップをおすすめします。</p>
+    </details>
+  </main>
+</body>
+</html>
