@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>検索結果が出ないときの対処ガイド - ad-hub</title>
+  <meta name="description" content="検索結果が表示されないときの原因と対処法をまとめたページです。SURGEやSURGE Light、Google検索などで結果が出ない場合のチェックポイントを掲載。">
+  <meta name="robots" content="index, follow">
+  <style>
+    body { font-family: system-ui; background: #f9f9f9; margin: 0; color: #333; }
+    header { padding: 20px; background: #fff; border-bottom: 1px solid #ddd; }
+    h1 { font-size: 22px; margin: 0; }
+    main { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
+    h2 { font-size: 18px; margin-top: 30px; }
+    details { margin: 12px 0; padding: 12px; background: #fff; border: 1px solid #eee; border-radius: 8px; }
+    summary { cursor: pointer; font-weight: bold; }
+    p { line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>検索結果が出ないときの対処ガイド</h1>
+  </header>
+  <main>
+    <p>検索しても結果が表示されない場合、以下の項目を順に確認してください。</p>
+
+    <h2>SURGE / SURGE Light</h2>
+    <details>
+      <summary>検索候補が表示されない</summary>
+      <p>JavaScriptが無効になっている可能性があります。ブラウザの設定をご確認ください。</p>
+    </details>
+    <details>
+      <summary>検索先が開かない（SURGE Light）</summary>
+      <p>ポップアップブロックが有効になっていると、外部検索が開かないことがあります。ブラウザの設定をご確認ください。</p>
+    </details>
+
+    <h2>Google・Edge・辞書など外部検索</h2>
+    <details>
+      <summary>検索してもページが出てこない</summary>
+      <p>検索エンジンにインデックスされていない可能性があります。<code>site:example.com</code> で確認してみてください。</p>
+    </details>
+    <details>
+      <summary>検索結果が一部しか表示されない</summary>
+      <p>広告ブロックや拡張機能が干渉している場合があります。一時的に無効化してみてください。</p>
+    </details>
+
+    <h2>ネットワーク・ブラウザの問題</h2>
+    <details>
+      <summary>検索が遅い／止まる</summary>
+      <p>Wi-Fiやネット接続が不安定な場合、検索結果の読み込みが中断されることがあります。接続状況をご確認ください。</p>
+    </details>
+    <details>
+      <summary>ブラウザが古い／動作が重い</summary>
+      <p>最新バージョンにアップデートしてください。キャッシュや履歴のクリアも有効です。</p>
+    </details>
+  </main>
+</body>
+</html>
